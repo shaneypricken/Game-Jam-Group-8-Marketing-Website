@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protocol: Extraction</title>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="marketing-style.css">
+</head>
+<body>
+
+  <div class="scanlines"></div>
+  <div class="ember-container" id="embers"></div>
+
+  <nav>
+    <div class="logo-placeholder">CORE-TECH</div>
+    <div class="nav-links">
+      <a href="#intel">INTEL</a>
+      <a href="#mechanics">SPECS</a>
+      <button class="deploy-btn">ENTER SYSTEM</button>
+    </div>
+  </nav>
+
+  <header>
+    <div class="hero-content">
+      <div class="glitch-wrapper">
+        <h1 class="glitch" data-text="EVACUATE THE CORE">EVACUATE THE CORE</h1>
+      </div>
+      <p class="subtitle">TWO CONTRASTING FORCES. ONE VOLCANIC COLLAPSE.</p>
+      <div class="status-bar">
+        <span>STATUS: CRITICAL</span>
+        <span class="separator">|</span>
+        <span>TEMP: 2400°C</span>
+        <span class="separator">|</span>
+        <span>STABILITY: 14%</span>
+      </div>
+    </div>
+  </header>
+
+  <section id="intel" class="features">
+    <div class="feature-card tiny">
+      <div class="tag">UNIT_01: AGILITY</div>
+      <h3>THE POCKET BREACHER</h3>
+      <p>Navigate the conduits where others cannot. Small enough to bypass security, fast enough to outrun the flow.</p>
+    </div>
+
+    <div class="feature-card giant">
+      <div class="tag">UNIT_02: POWER</div>
+      <h3>THE KINETIC CRUSHER</h3>
+      <p>Manipulate the environment. Shift the heavy debris. A wall is just a door that hasn't been hit hard enough yet.</p>
+    </div>
+  </section>
+
+  <section id="mechanics" class="cta-section">
+    <div class="terminal-box">
+      <p class="typing">> INITIALIZING EXTRACTION PROTOCOL...</p>
+      <p class="typing">> SYNERGY REQUIRED: 100%</p>
+      <p class="typing">> LOCATION: VOLCANO SECTOR 08</p>
+      <button class="big-deploy">ACCESS MISSION</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 NEON-VOLCANO INDUSTRIES. NO TITLE. JUST SURVIVAL.</p>
+  </footer>
+
+  <script>
+    // Simple Ember Generation for the marketing page
+    const container = document.getElementById('embers');
+    for (let i = 0; i < 30; i++) {
+      const ember = document.createElement('div');
+      ember.className = 'ember';
+      ember.style.left = Math.random() * 100 + 'vw';
+      ember.style.animationDuration = (Math.random() * 3 + 2) + 's';
+      ember.style.animationDelay = Math.random() * 5 + 's';
+      container.appendChild(ember);
+    }
+  </script>
+</body>
+</html>
